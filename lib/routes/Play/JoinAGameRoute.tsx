@@ -11,9 +11,9 @@ import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import React, { useEffect, useState } from "react";
-import appIcon from "../../../images/blue/app.png";
 import { AppLink } from "../../components/AppLink/AppLink";
 import { Page } from "../../components/Page/Page";
+import { Images } from "../../constants/Images";
 import { Icons } from "../../domains/Icons/Icons";
 import { isWebRTCSupported } from "../../hooks/usePeerJS/usePeerJS";
 import { useTranslate } from "../../hooks/useTranslate/useTranslate";
@@ -74,7 +74,7 @@ export const JoinAGame: React.FC<{
         }}
       >
         <Box pb="2rem" textAlign="center">
-          <img alt="Fari" width="150px" src={appIcon} />
+          <img alt="Fari" width="150px" src={Images.appIcon} />
         </Box>
         <Box pb="2rem" textAlign="center">
           <Typography variant="h4">

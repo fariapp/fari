@@ -14,9 +14,6 @@ import HelpIcon from "@material-ui/icons/Help";
 import Rating from "@material-ui/lab/Rating";
 import React, { useContext, useEffect } from "react";
 import { useHistory } from "react-router";
-import appIcon from "../../../images/blue/app.png";
-import discord from "../../../images/services/discord.png";
-import lokalise from "../../../images/services/lokalise.png";
 import { RouterLink } from "../../components/AppLink/AppLink";
 import { ConditionalWrapper } from "../../components/ConditionalWrapper/ConditionalWrapper";
 import { FateLabel } from "../../components/FateLabel/FateLabel";
@@ -26,6 +23,7 @@ import { ManagerMode } from "../../components/Manager/Manager";
 import { FariToolbarMaxWidth, Page } from "../../components/Page/Page";
 import { PageMeta } from "../../components/PageMeta/PageMeta";
 import { Patreon } from "../../components/Patreon/Patreon";
+import { Images } from "../../constants/Images";
 import { CharactersContext } from "../../contexts/CharactersContext/CharactersContext";
 import { useLogger } from "../../contexts/InjectionsContext/hooks/useLogger";
 import { ScenesContext } from "../../contexts/SceneContext/ScenesContext";
@@ -52,7 +50,7 @@ const Sponsors: Array<{ image: string; name: string }> = [
   },
   {
     name: "Lokalise",
-    image: lokalise,
+    image: Images.lokalise,
   },
 ];
 
@@ -96,7 +94,7 @@ export const HomeRoute: React.FC<{}> = (props) => {
           >
             <Grid container justify="center" alignItems="center" spacing={3}>
               <Grid item>
-                <img alt="Fari" width="70px" src={appIcon} />
+                <img alt="Fari" width="70px" src={Images.appIcon} />
               </Grid>
               <Grid item>
                 <FateLabel
@@ -539,7 +537,7 @@ export const HomeRoute: React.FC<{}> = (props) => {
       <Grid container justify="center" spacing={2}>
         {" "}
         <Grid item xs={12}>
-          <img src={discord} className={css({ width: "200px" })} />
+          <img src={Images.discord} className={css({ width: "200px" })} />
         </Grid>
         <Grid item xs={12}>
           <Button

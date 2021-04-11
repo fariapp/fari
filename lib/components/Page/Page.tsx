@@ -26,8 +26,8 @@ import SignalWifi4BarLockIcon from "@material-ui/icons/SignalWifi4BarLock";
 import React, { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { Link as RouterLink } from "react-router-dom";
-import appIcon from "../../../images/blue/app.png";
 import { env } from "../../constants/env";
+import { Images } from "../../constants/Images";
 import { useZIndex } from "../../constants/zIndex";
 import { CharactersContext } from "../../contexts/CharactersContext/CharactersContext";
 import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext";
@@ -383,7 +383,7 @@ export const Page: React.FC<{
                     cursor: "pointer",
                     display: props.hideHeaderLogo ? "none" : "inherit",
                   })}
-                  src={appIcon}
+                  src={Images.appIcon}
                 />
               </RouterLink>
               {isLive && (

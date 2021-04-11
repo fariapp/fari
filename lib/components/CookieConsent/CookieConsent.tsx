@@ -23,7 +23,6 @@ export const CookieConsent: React.FC<{}> = (props) => {
     setConsent("true");
     localStorage.setItem(cookieConsentLocalStorageKey, "true");
   }
-
   return (
     <Snackbar
       open={open}
